@@ -1,0 +1,93 @@
+\documentclass[
+	11pt, % 10pt - 12pt
+	%letterpaper
+	%indonesian
+]{assignment}
+
+% Template-specific packages
+\usepackage{mathpazo} % Use the Palatino font
+
+\usepackage{graphicx} % Required for including images
+\usepackage{booktabs} % Required for better horizontal rules in tables
+
+\usepackage{amsmath} % Math!
+\usepackage{listings} % Required for insertion of code
+\usepackage{enumerate} % To modify the enumerate environment
+
+\newcommand{\ipAddress}[1]{{\fontfamily{cmtt}\selectfont #1}} % IP Address custom style!
+
+% ! CUSTOM - LST Preset
+\lstset{
+    language=SQL,
+    frame=single, % Frames
+    showstringspaces=false, % Don't put marks in string spaces
+    numbers=left, % Line numbers on left
+    numberstyle=\tiny, % Line numbers styling
+    breaklines,
+    basicstyle=\fontfamily{cmtt}\selectfont\small,
+    columns=fullflexible,
+}
+
+
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+% Student name
+\author{Christopher Angelo - 2440041503}
+% Institute or school name
+\institute{BINUS University\\ Global Class}
+
+
+% Due date
+\date{Feb 16th, 2021}
+% Assignment title
+\title{Final Exam Answer}
+
+% Course details
+\class{Algorithm Design and Analysis (COMP6049001)}
+\professor{Mr.\ Rhio Sutoyo}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT CONTENT
+%----------------------------------------------------------------------------------------
+
+\section*{Question 1}
+
+\begin{problem}
+In front of a cave, there is \(T\) number of problems. Now to solve this, how much light bulb has been sold in the United States? And also, can you write the first paragraph of lorem ipsum.
+\end{problem}
+
+\subsection*{Answer 1}
+There's like 50 million light bulbs in the world. Here's the first paragraph of lorem ipsum:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\begin{enumerate}
+	\item We can also enumerate for ordered lists
+\end{enumerate}
+\begin{itemize}
+	\item Or if you want, you can use itemize for unordered lists
+\end{itemize}
+
+\begin{flalign*}
+	\text{Here is some fancy aligned stuff } & \text{= \textbf{CHRIST}}         \\
+	\text{Here is some fancy aligned stuff } & \text{= [C, H, R, I, S, T]}      \\
+	\text{Here is some fancy aligned stuff } & \text{= [2, 7, 17, 11, 18, 19]}  \\
+	\text{Here is some fancy aligned stuff } & \text{= [8, 13, 23, 17, 24, 25]} \\
+	\text{Here is some fancy aligned stuff } & \text{= [i, n, x, r, y, y]}      \\
+	\\
+	\text{Decrypted message }                & \text{= \textbf{inxryz}}
+\end{flalign*}
+
+\lstinputlisting[]{code/.gitkeep}
+
+% \printbibliography[]{}
+
+
+\end{document}
