@@ -14,6 +14,18 @@
 \usepackage{listings} % Required for insertion of code
 \usepackage{enumerate} % To modify the enumerate environment
 
+% https://castel.dev/post/lecture-notes-2/#including-inkscape-figures-in-a-latex-document
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+
+\newcommand{\incfig}[1]{%
+    \def\svgwidth{\columnwidth}
+    \import{./graphics/}{#1.pdf_tex}
+}
+
+
 \newcommand{\ipAddress}[1]{{\fontfamily{cmtt}\selectfont #1}} % IP Address custom style!
 
 % ! CUSTOM - LST Preset
